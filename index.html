@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Driven Development</title>
+</head>
+
+<body>
+    <h1>Projektmunka</h1>
+    <header>
+        <h2>Egységtesztelés:</h2>
+        <p>Ez a tesztelés legalapvetőbb típusa az egység vagy alkatrész tesztelése. Alapvetően a fejlesztők végzik, hogy
+            elsöntsék azt, hogy kódjuk megfelelően működik és megfelel a
+            felhasználói előírásoknak. Kipróbálják az általuk írt kódrészleteket, például osztályokat, funkciókat,
+            interfészeket és eljárásokat. A szoftver hibáinak észlelése a nap elején annak előnye, hogy ezzel a csapat
+            minimalizálja a szoftverfejlesztési kockázatokat, valamint az időt és pénzt pazarolja, ha vissza kell térnie
+            és
+            meg kell oldania a program alapvető problémáit, miután majdnem elkészült.</p>
+        <h2>Komponens tesztelés:</h2>
+        <p>A komponensteszt csak a rendszer egy komponensét teszteli önmagában. A komponensteszt a rendszer önálló
+            részeit
+            teszteli általában a forráskód ismeretében
+        <ul>
+            <h2>Gyakori fajtái:</h2>
+            <li>unit-teszt</li>
+            <li>modulteszt</li>
+        </ul>
+        <p>A unit-teszt, vagy más néven egységteszt, a metódusokat teszteli. Adott paraméterekre ismerjük a metódus
+            visszatérési értékét. Ezt használtuk mi is a Test Drive Development órán.
+            A unit-teszt megvizsgálja, hogy a tényleges visszatérési érték megegyezik-e az elvárttal. Ha igen, sikeres a
+            teszt, egyébként sikertelen.</p>
+        </p>
+        <h2>Rendszer tesztelés:</h2>
+        <p>A rendszerteszt nagyon gyakran feketedobozos teszt. Gyakran nem is a fejlesztő cég, ahol esetleg elfogultak a
+            tesztelők, hanem egy független cég végzi. Ilyenkor a tesztelők és a fejlesztők közti kapcsolat tartást egy
+            hibabejelentő (bug trucking) rendszer látja el. A rendszerteszt feladata, hogy ellenőrizze, hogy a
+            specifikációknak megfelel-e a termék. Ha pl. a követelmény specifikáció azt írja, hogy lehessen jelentést
+            készíteni az éve forgalomról, akkor ezt a tesztelők kipróbálják, hogy lehet-e, és hogy helyes-e a jelentés.
+            Ha
+            hibát találnak, azt felviszik a hibabejelentő rendszerbe. A rendszer tesztelésénél a tesztelők alapvetően az
+            alkalmazás kompatibilitását tesztelik a rendszerrel. A rendszerintegrációs teszt elvégezhető a rendszer
+            tesztelése után vagy a rendszer tesztelésével párhuzamosan.</p>
+    </header>
+
+    <h2>Egység teszttel kapcsolatos lépések leírása</h2>
+    <p>A TDD első lépése, tehát az hogy milyen bemenetre milyen kimenetet kell adni a metódusnak, ezeket fel kell
+        térképezni.</p>
+    <p>A TDD első lépése hogy meghatározzuk az értelmezési tartományt. Nem megoldjuk a feladatot hanem azt nézzük, hogy
+        mire van értelmezve a feladat.</p>
+    <p>A TDD második lépése az értékkészlet meghatározása. Ezek azok az értékek amelyeket felvehet a függvény.</p>
+    <p>A TDD harmadik lépése bemeneti-kimeneti értékpárok meghatározása. Adott bemenő adatok esetén, milyen kimenetet
+        kell kapnunk.</p>
+    <p>A TDD negyedik lépése a teszt megírása.</p>
+    <p>A TDD ötödik lépése az implementációs kód elkészítése. Ez az implementációs kód a Java metódus amit szeretnénk a
+        végére összehozni.</p>
+    <p>A TDD hatodik lépése a teszt futtatása. Ha failed, akkor vagy a teszteset, bvagy maga a függvény hibás, ha jó
+        akkor újboli teszteseteket kell írni.</p>
+    <p>A TDD hetedik lépése a refaktorálás. Ez a folyamat a forráskód elemzését jelenti.</p>
+    <h2>Általam kitálált feladatok:</h2>
+    <div>Ismerjük, a Nyíregyházától eltelt kilóméterek és azon belül a méterek számát! A metódus állítsa elő a
+        Nyíregyházától eltelt méterek számát!
+        Minta:
+        Bemenet: 5 150, kimenet: 5150
+        <img src="kepek/TDDegyikfeladat01.png" alt="">
+        <img src="kepek/TDDegyikfeladat02.png" alt="">
+    </div>
+    <br>
+    <div>Egy olyan metódusra van szükségünk, amely egy pozitív egész számot kap
+        paraméternek és az ezresek helyén álló számot adja vissza!
+        Minta:
+        Bemenet: 7000
+        Kimenet: 7</div>
+</body>
+
+</html>
